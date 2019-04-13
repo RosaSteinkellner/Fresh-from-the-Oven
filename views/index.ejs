@@ -5,6 +5,12 @@
         </title>
     </head>
     <body>
-        Hello World
+        <h1> <%= title %> </h1>
+        <dl>
+        <% for (var i = 0; i < ingredients.length; i = i+1) { %>
+            <dt><b> <%= ingredients[i].name %> </b></dt>
+            <dd> <%= ingredients[i].quantity %> </dd>
+            <% } %>
+        </dl>
     </body>
 </html>
